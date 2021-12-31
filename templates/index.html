@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bert app</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='aperture.svg')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" >
+  </head>
+  <body>
+    <form action="/" method="POST">
+      <p><label for="tweet">Message:</label></p>
+      <div>
+        <textarea name="tweet" id="tweet" rows="4" cols="25"></textarea>
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
